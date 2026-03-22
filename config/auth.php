@@ -72,8 +72,8 @@ return [
         ],
 
         'admins' => [
-            'driver' => 'database',
-            'table' => 'admins',
+            'driver' => 'eloquent',
+            'model' => App\Models\Admin\Admin::class,
         ],
         // 'users' => [
         //     'driver' => 'database',
@@ -109,7 +109,7 @@ return [
         ],
         'admins' => [
             'provider' => 'admins',
-            'table' => 'admin_password_reset',
+            'table' => 'admin_password_reset_tokens',
             'expire' => 60,
             'throttle' => 60,
         ],

@@ -110,7 +110,7 @@ class LoginController extends Controller
     protected function authenticated(Request $request, $user)
     {
         // dd('check');
-        // return redirect()->intended(route('admin.dashboard'));
+        return redirect()->intended(route('admin.dashboard'));
 
     }
 }
